@@ -1,4 +1,4 @@
-const { firstName, firstNumber, ausserLetzteNumber, ausserLetztenName, lastName, lastNumber, notfirstandAllNames, notfirstandAllNumbers, eNte, removeItemFromArray, removeDuplicates } = require("./functions.js")
+const { firstName, firstNumber, ausserLetzteNumber, ausserLetztenName, lastName, lastNumber, notfirstandAllNames, notfirstandAllNumbers, eNte, removeItemFromArray, removeDuplicates, sumArr, reducer, randomNumber, capitalize, capitalizeAll, control } = require("./functions.js")
 
 const { names, numbers } = require("./data.js")
 
@@ -25,3 +25,15 @@ console.log(removeItemFromArray(names, "Ahmed"));
 console.log(removeItemFromArray(numbers, 1));
 
 console.log(removeDuplicates(numbers));
+
+console.log(sumArr(numbers));
+
+console.log(numbers.reduce(reducer));
+
+console.log(randomNumber(2, 10));
+
+console.log(capitalize('hund'));
+
+console.log(capitalizeAll('mäuschen'));
+
+console.log(control('hans', 's'));

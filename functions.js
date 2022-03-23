@@ -57,14 +57,47 @@ function removeDuplicates(arrDouble) {
 }
 
 //-------
-// function sumArr(arrayssu) {
-//     arrayssu = arrayssu.
-// }
 
-function sumArr(params) {
+function sumArr(arraySum) {
+    let sum = 0;
+    for (let i = 0; i < arraySum.length; i++) {
+        sum += arraySum[i];
+    }
+    console.log(sum);
+}
+//------------
+const reducer = (accumulator, curr) => accumulator + curr;
 
+//------------
+
+function randomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min) + min)
 }
 
+//-----------
+
+function capitalize(sentence) {
+    return sentence = sentence[0].toUpperCase() + sentence.slice(1)
+}
+
+//----------
+
+function capitalizeAll(sentenceAll) {
+    return sentenceAll = sentenceAll.toUpperCase()
+}
+
+//----------
+
+function control(para1, para2) {
+
+
+    if (para1.slice(-1) == para2) {
+        console.log(true);
+    } else {
+        console.log(false);
+    }
+
+}
 
 
 module.exports = {
@@ -78,5 +111,11 @@ module.exports = {
     notfirstandAllNumbers,
     eNte,
     removeItemFromArray,
-    removeDuplicates
+    removeDuplicates,
+    sumArr,
+    reducer,
+    randomNumber,
+    capitalize,
+    capitalizeAll,
+    control
 }
